@@ -65,7 +65,7 @@ def location(update, context):
     if distance < config.max_distance_meter:
         text = 'Du bist {:.2f}m vom grünen Band entfernt und hast schon {:.2f}% geschafft!'.format(distance, percent)
     else:
-        text = 'Du bist weiter als {:.2f}m vom grünen Band entfernt ({:.2f}m). Berechnung nicht möglich!'.format(config.max_distance_meter, distance)
+        text = 'Du bist weiter als {:.0f}m vom grünen Band entfernt ({:.2f}m). Berechnung nicht möglich!'.format(config.max_distance_meter, distance)
     
     context.bot.send_message(chat_id=update.effective_chat.id, text=text)
 
