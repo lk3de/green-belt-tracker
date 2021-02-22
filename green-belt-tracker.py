@@ -10,7 +10,7 @@ import geopy.distance
 
 # function to handle the /start command
 def start(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text='Herzlich willkommen! Ich bin der Green Belt Tracker Bot.')
+    context.bot.send_message(chat_id=update.effective_chat.id, text='Herzlich willkommen! Ich bin der Green Belt Tracker Bot. Schick mir einfach deinen Standort und los geht\'s!')
 
 
 # function to handle the /help command
@@ -20,7 +20,8 @@ def help(update, context):
 
 # function to handle normal text messages
 def text(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text=f'Du hast gerade "{update.message.text}" geschrieben.')
+    #context.bot.send_message(chat_id=update.effective_chat.id, text=f'Du hast gerade "{update.message.text}" geschrieben.')
+    context.bot.send_message(chat_id=update.effective_chat.id, text='Schick mir bitte deinen Standort.')
 
 # function to handle location messages
 def location(update, context):
