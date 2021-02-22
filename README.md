@@ -6,7 +6,7 @@ This is a [Telegram Bot](https://core.telegram.org/bots) that will tell me how f
 1. Copy the `config.example.py` into `config.py` and adapt at least the values for `bot_token` and `user_id_list` (use the [IDBot](https://telegram.me/myidbot) to get your own user ID)
 1. Install the project's requirements using
 ```
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
 ## Run
