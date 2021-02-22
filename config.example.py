@@ -2,7 +2,7 @@
 import logging
 
 # Paste your bot secret here
-bot_token = "my-super-secret-token"
+bot_token = 'my-super-secret-token'
 
 # Only the users in this list can use the bot
 user_id_list = [
@@ -11,7 +11,8 @@ user_id_list = [
 ]
 
 # GPX configuration
-gpx_file = "myfile.gpx"
+gpx_file = 'green-belt-germany.gpx'
+max_distance_meter = 10000
 
 # Logging configuration
 log_level = logging.DEBUG
