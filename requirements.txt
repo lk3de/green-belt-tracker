@@ -1,3 +1,3 @@
-python-telegram-bot
-gpxpy
-geopy
+python-telegram-bot>=13.3
+gpxpy>=1.4.2
+geopy>=2.1.0
