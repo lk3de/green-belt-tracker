@@ -17,3 +17,6 @@ $ python3 green-belt-tracker.py
 
 ## To Do
 * Make the bot capable of using arbitrary GPX tracks
+
+## Credits
+* GPX file: https://radreise-wiki.de/Gr%C3%BCnes_Band_Deutschland#GPS-Tracks
