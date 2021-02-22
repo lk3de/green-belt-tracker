@@ -95,7 +95,6 @@ def main():
     dispatcher.add_handler(MessageHandler(filters=Filters.location, callback=location))
 
     # start the bot
-    print('Press Ctrl-C to abort')
     updater.start_polling()
 
 
