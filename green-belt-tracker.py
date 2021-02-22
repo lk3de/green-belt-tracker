@@ -33,9 +33,10 @@ def location(update, context):
     else:
         message = update.message
     
+    user_id = update.effective_chat.id
     user_latitude = message.location.latitude
     user_longitude = message.location.longitude
-    logging.info('Incoming location with Latitude: {:.2f}, Longitude: {:.2f}'.format(user_latitude, user_longitude))
+    logging.info('Incoming location from {} with Latitude: {:.2f}, Longitude: {:.2f}'.format(user_id, user_latitude, user_longitude))
 
     #context.bot.send_message(chat_id=update.effective_chat.id, text='Deine Position ist (lat/lon): %.6f / %.6f' % (user_latitude, user_longitude))
     gpx_file = open(config.gpx_file, 'r')
